@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script defer src="/models/script.js"></script>
+    <title>Recuerdos</title>
+</head>
+<body>
+    <header>
+        <h1> Recuerdos </h1>
+    </header>
+    <div class="container">
+        <div class="photos" id="photos">
+            <div class="add-item" onclick="openDialog()">
+                <img src="/images/mas.png" alt="Añadir Recuerdos">
+                <h2>Añadir Más Recuerdos</h2>
+            </div>
+        </div>
+    </div> 
+
+    <dialog id="dialog">
+        <h1>Añadir un nuevo Recuerdo</h1>
+        <input type="text" placeholder="Nombre del Recuerdo" id="inpTitle">
+        <br>
+        <br>
+        <textarea placeholder="Describe el Recuerdo" id="inpDesc"></textarea>
+        <br>
+        <br>
+        <input type="file" placeholder="Imagen del Recuerdo" id="inpFile">
+        <br>
+        <br>
+        <button onclick="add()">Añadir Recuerdo</button>
+    </dialog>
+</body>
+</html>
